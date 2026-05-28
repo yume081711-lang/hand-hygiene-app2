@@ -21,12 +21,12 @@ export default function HandHygieneApp() {
     return saved ? JSON.parse(saved) : defaultProfessions;
   });
 
-  const moments = [
-    '患者に触れる前',
-    '清潔・無菌操作前',
-    '体液曝露リスク後',
-    '患者に触れた後',
-    '患者周辺に触れた後',
+   const moments = [
+    '① 患者に触れる前',
+    '② 清潔・無菌操作前',
+    '③ 体液曝露リスク後',
+    '④ 患者に触れた後',
+    '⑤ 患者周辺に触れた後',
   ];
 
   const [ward, setWard] = useState('外来');
