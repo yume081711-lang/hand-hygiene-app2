@@ -450,5 +450,5 @@ export default function HandHygieneApp() {
       </button>
     </td>
   </tr>
-))}
+})}
 </tbody>
