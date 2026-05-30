@@ -423,6 +423,7 @@ export default function HandHygieneApp() {
                   <th className="text-left p-2">職種</th>
                   <th className="text-left p-2">タイミング</th>
                   <th className="text-left p-2">方法</th>
+                  <th className="text-left p-2">削除</th>
                 </tr>
               </thead>
 
