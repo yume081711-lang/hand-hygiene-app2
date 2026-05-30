@@ -448,3 +448,5 @@ export default function HandHygieneApp() {
     <Trash2 size={18} />
   </button>
 </td>
+</tr>
+))}
