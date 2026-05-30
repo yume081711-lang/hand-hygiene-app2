@@ -54,6 +54,11 @@ export default function HandHygieneApp() {
   };
 
   const resetRecords = () => {
+    const deleteRecord = (id) => {
+  const updated = records.filter((r) => r.id !== id);
+  setRecords(updated);
+  localStorage.setItem('handHygieneRecords', JSON.stringify(updated));
+};
    const deleteRecord = (id) => {
   const updated = records.filter((r) => r.id !== id);
   setRecords(updated);
