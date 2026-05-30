@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { Settings } from 'lucide-react';
+import { Settings, Trash2 } from 'lucide-react';
 export default function HandHygieneApp() {
   const defaultWards = ['外来', '3階病棟', '4階病棟', '5階病棟', '6階病棟'];
 
