@@ -428,25 +428,26 @@ export default function HandHygieneApp() {
               </thead>
 
               <tbody>
-                {records.map((r) => (
-                  <tr key={r.id} className="border-b">
-                    <td className="p-2">{r.ward}</td>
-                    <td className="p-2">{r.profession}</td>
-                    <td className="p-2">{r.moment}</td>
-                    <td className="p-2">
-                      {r.action === 'alcohol'
-                        ? 'アルコール使用'
-                        : r.action === 'soap'
-                        ? '流水石けん使用'
-                        : 'しない'}
-                    </td>
-  <td className="p-2">
-  <button
-    onClick={() => deleteRecord(r.id)}
-    className="text-red-500 hover:text-red-700"
-  >
-    <Trash2 size={18} />
-  </button>
-</td>
-</tr>
+               {records.map((r) => (
+  <tr key={r.id} className="border-b">
+    <td className="p-2">{r.ward}</td>
+    <td className="p-2">{r.profession}</td>
+    <td className="p-2">{r.moment}</td>
+    <td className="p-2">
+      {r.action === 'alcohol'
+        ? 'アルコール使用'
+        : r.action === 'soap'
+        ? '流水石けん使用'
+        : 'しない'}
+    </td>
+    <td className="p-2">
+      <button
+        type="button"
+        onClick={() => deleteRecord(r.id)}
+        className="text-red-500 hover:text-red-700"
+      >
+        <Trash2 size={18} />
+      </button>
+    </td>
+  </tr>
 ))}
