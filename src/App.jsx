@@ -54,7 +54,11 @@ export default function HandHygieneApp() {
   };
 
   const resetRecords = () => {
-    const confirmed = window.confirm('すべての観察記録を削除しますか？');
+   const deleteRecord = (id) => {
+  const updated = records.filter((r) => r.id !== id);
+  setRecords(updated);
+  localStorage.setItem('handHygieneRecords', JSON.stringify(updated));
+}; const confirmed = window.confirm('すべての観察記録を削除しますか？');
 
     if (!confirmed) return;
 
