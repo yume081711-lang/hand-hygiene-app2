@@ -440,6 +440,11 @@ export default function HandHygieneApp() {
                         ? '流水石けん使用'
                         : 'しない'}
                     </td>
+                    <td className="p-2">
+  <button
+    onClick={() => deleteRecord(r.id)}
+    className="text-red-500 hover:text-red-700"
+ 
                   </tr>
                 ))}
               </tbody>
